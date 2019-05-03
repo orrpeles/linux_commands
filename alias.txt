@@ -1,0 +1,7 @@
+#!/bin/bash
+# Aliasing PS and Grep to find the Process ID of processes in the system
+
+alias pf="ps-e | grep $1 -i"
+pf Chrome # case insensitive
+
+# Add aliases to .bash_aliases file in home directory to make them permanent

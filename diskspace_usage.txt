@@ -1,0 +1,48 @@
+View info about your filesystem and available disk space:
+Ref: https://www.howtogeek.com/409611/how-to-view-free-disk-space-and-disk-usage-from-the-linux-terminal/
+ 
+df #dumps all file system
+df -h #dumps all file system in readable format
+
+Here is a brief explanation about the display on terminal:
+
+Fileystem: The name of this filesystem.
+1K-Blocks: The number of 1K blocks that are available on this filesystem.
+Used: The number of 1K blocks that have been used on this file system.
+Available: The number of 1K blocks that are unused on this file system.
+Use%: The amount of space used in this file system given as a percentage.
+File: The filesystem name, if specified on the command line.
+Mounted on: The mount point of the filesystem.
+
+Flags:
+-B -> block size
+df -BM #display all files in Megabytes
+--total -> ads a bottom line total
+df --total
+df --total -BM #display total in megs
+-T -> type of files 
+df -T #provides input as to type of file
+-x -> exclude specific types of files
+df -x squashfs
+df -x squashfs --total
+
+df /dev/sda* #displays size of HDD
+df -h --total /dev /run #display size of folders
+
+Output and aliasing:
+
+Let's create an alias allowing to see disk space usage. 
+Parameters:
+
+source: The name of the filesystem.
+fstype: The type of the filesystem.
+size: The size of the filesystem, by default in 1K blocks.
+used: The space used on the filesystem, by default in 1K blocks.
+avail: The available space on the filesystem, by default in 1K blocks.
+pcent: The percentage of used space on the filesystem in inodes, by default in 1K blocks.
+file: The filesystem name if specified on the command line.
+target: The mount point for the filesystem.
+
+alias diskSpace="df -h /dev/sda1 --output=source,fstype,size,used,avail,pcent"
+Calling diskSpace will show HDD source / type / size / used / available / percentage in human readable format
+

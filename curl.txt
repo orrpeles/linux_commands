@@ -1,0 +1,10 @@
+#!/bin/bash
+# curl can be used to grab content files from URLs
+
+#examples:
+
+curl www.google.com #dumps all info over terminal
+curl www.google.com > google.html #dumps all info to google.html
+curl -s www.google.com > google.html #dumps all info to google.html without displaying status bar
+
+ 

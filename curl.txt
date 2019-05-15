@@ -6,5 +6,5 @@
 curl www.google.com #dumps all info over terminal
 curl www.google.com > google.html #dumps all info to google.html
 curl -s www.google.com > google.html #dumps all info to google.html without displaying status bar
-
+curl -X post "https://rest.nexmo.com/sms/json" # post would be used as the request instead of get (default)
  

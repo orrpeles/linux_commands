@@ -1,0 +1,5 @@
+#!/bin/bash
+# log out of the system via command line
+# reference: https://askubuntu.com/questions/15795/how-can-you-log-out-via-the-terminal
+
+gnome-session-quit --no prompt

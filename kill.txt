@@ -1,0 +1,5 @@
+#!/bin/bash
+# Objective: kill a program with multiple PIDs via an array, print each PID
+# Import Note: there is a weird symbol: ` which is NOT ' that needs to be used to pass the array
+
+for i in `pidof firefox`; do echo "killing $i"; kill $i; done;

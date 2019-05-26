@@ -6,9 +6,11 @@ https://www.hostingadvice.com/how-to/set-command-aliases-linuxubuntudebian/
 
 
 Retreive missing / lost / deleted .bashrc file by copying from /etc/skel/.baRef: https://superuser.com/questions/584540/no-bashrc-file-in-my-home-directory
-alias pf="ps-e | grep $1 -i"
-pf Chrome # case insensitive
-alias cl=clear
-alias logout='gnome-session-quit --no-prompt'
+
+#Alias Info
+alias pf="ps-e | grep chrome -i" #grep all chrome instances
+alias cl=clear # clear terminal
+alias logout='gnome-session-quit --no-prompt' # system logout
 alias linuxkill ='for i in `pidof skypeforlinux`; do kill -9 $i; done;'
 alias diskSpace="df -h /dev/sda1 --output=source,fstype,size,used,avail,pcent"
+

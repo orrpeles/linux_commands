@@ -1,0 +1,5 @@
+#!/bin/bash
+# program that prints input to the screen
+
+gnome-terminal -- bash -c 'echo "hello world"; read'
+

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+grep --include='*.py' -ilr 'glob' /home/enumtheworld/inputOutput
+
+#i - case sensitivity
+#l - return a file
+#--include='*.py' - return only files that end with .py
+#4 - search recursively (the entire directory)

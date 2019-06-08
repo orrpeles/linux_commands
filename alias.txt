@@ -7,5 +7,7 @@ pf Chrome # case insensitive
 alias cl=clear
 alias logout='gnome-session-quit --no-prompt'
 alias linuxkill ='for i in `pidof skypeforlinux`; do kill -9 $i; done;'
+eval "$(thefuck --alias)"
+eval $(thefuck --alias fuck) #https://github.com/nvbn/thefuck
 
 

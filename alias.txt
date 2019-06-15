@@ -10,6 +10,8 @@ alias linuxkill ='for i in `pidof skypeforlinux`; do kill -9 $i; done;'
 eval "$(thefuck --alias)"
 eval $(thefuck --alias fuck) #https://github.com/nvbn/thefuck
 alias myip='curl ifconfig.me -w "\n"' # -w (write out - new line)
+alias diskSpace="df -h /dev/sda1 --output=source,fstype,size,used,avail,pcent"
+# Calling diskSpace will show HDD source / type / size / used / available / percentage in human readable format
 
 
 

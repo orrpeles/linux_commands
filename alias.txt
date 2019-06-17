@@ -12,6 +12,7 @@ eval $(thefuck --alias fuck) #https://github.com/nvbn/thefuck
 alias myip='curl ifconfig.me -w "\n"' # -w (write out - new line)
 alias diskSpace="df -h /dev/sda1 --output=source,fstype,size,used,avail,pcent"
 # Calling diskSpace will show HDD source / type / size / used / available / percentage in human readable format
-
+alias gitOneLine='perl -nE "INIT {print q~git > ~} exit if (/^(\\\\q|exit|quit)\$/i); system qq~git \$_~; print q~git > ~"'
+# https://stackoverflow.com/questions/56505000/how-do-i-avoid-typing-git-at-the-begining-of-every-git-command
 
 

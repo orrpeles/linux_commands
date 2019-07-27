@@ -15,4 +15,5 @@ alias diskSpace="df -h /dev/sda1 --output=source,fstype,size,used,avail,pcent"
 alias gitOneLine='perl -nE "INIT {print q~git > ~} exit if (/^(\\\\q|exit|quit)\$/i); system qq~git \$_~; print q~git > ~"'
 # https://stackoverflow.com/questions/56505000/how-do-i-avoid-typing-git-at-the-begining-of-every-git-command
 alias cronlog='sudo tail /var/mail/root' # install postfix before running this command
-
+alias listD="ls -d /*" # list directories
+alias sortD="ls | rev | cut -d '.' -f1 | rev | sort | uniq -c" #group and count files in directory by their extension

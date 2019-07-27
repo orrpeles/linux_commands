@@ -1,0 +1,6 @@
+# Based on the following resource:
+# https://dev.to/awwsmm/create-a-dynamic-prompt-string-in-bash-3617
+
+export PS1 = "orr@pel - \$(date):\n$"
+
+Where PS1 is the bash prompt.

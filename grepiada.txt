@@ -6,3 +6,7 @@ grep --include='*.py' -ilr 'glob' /home/enumtheworld/inputOutput
 #l - return a file
 #--include='*.py' - return only files that end with .py
 #4 - search recursively (the entire directory)
+
+grep --include='*.pm' -irl 'whatsapp' / 2>/dev/null
+
+# 2>/dev/null - throw away all the garbage

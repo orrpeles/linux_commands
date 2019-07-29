@@ -1,0 +1,4 @@
+# resource man find and search for 'examples'
+find / -iname "*whatsapp*" -type d -print #print any directory that has the word 'whatsapp', search is case insensitive. Preferrably to add 2>/dev/null to not see all the junk
+find / -iname "*whatsapp*" #search for 'whatsapp' on root directory going forward
+find / -iname "*whatsapp*" -type f #search for files on root directory going forward 

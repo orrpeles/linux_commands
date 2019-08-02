@@ -1,0 +1,12 @@
+# Ref: https://www.howtogeek.com/435164/how-to-use-the-xargs-command-on-linux/
+
+# Create an archived test file full of png files collected recursively from machine:
+find ./ -name '*.png' -type f -print0 | xargs -0 -n1 > png.archive
+Beakdown:
+- find at current directory onwards png files;
+- if there are whitespaces ignore them (print0)
+- break them down by line (xargs -n1)
+- redirect to png.archive
+
+# you can then use pipe xargs into wc to get a breakdown for png.archive:
+wc png.archive | xargs -n1

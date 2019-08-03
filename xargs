@@ -10,3 +10,12 @@ Beakdown:
 
 # you can then use pipe xargs into wc to get a breakdown for png.archive:
 wc png.archive | xargs -n1
+
+# using -I %
+# ref: https://shapeshed.com/unix-xargs/
+
+echo one two three | xargs -I % sh -c 'echo %; cd ~/backups; mkdir %'
+
+# breakdown: \
+# The -I % argument designates '%' as a variable which will be sequentially replaced by each argument encountered by xargs.
+# one two three are echoes back to the terminal, each time directory is changed to ~/backups and directory is made per each call.

@@ -3,3 +3,5 @@ find / -iname "*whatsapp*" -type d -print #print any directory that has the word
 find / -iname "*whatsapp*" #search for 'whatsapp' on root directory going forward
 find / -iname "*whatsapp*" -type f #search for files on root directory going forward 
 find . -cmin -10 #find files added the last 10 minutes
+find . -cmin -10 -exec rm -t Director {} + #find files recently changed and move them to directory
+find . -cmin -10 print0 | xargs -0 mv -t Directory #find files recently changed and move them to directory

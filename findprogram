@@ -1,0 +1,2 @@
+ps -u enumtheworld #where 'enumtheworld=username'
+# this short one liner filters running processes by unique username

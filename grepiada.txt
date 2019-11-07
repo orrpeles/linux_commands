@@ -10,3 +10,5 @@ grep --include='*.py' -ilr 'glob' /home/enumtheworld/inputOutput
 grep --include='*.pm' -irl 'whatsapp' / 2>/dev/null
 
 # 2>/dev/null - throw away all the garbage
+
+stat *.pdf | egrep -i "file:|change:" #return lines that include either 'file:' or 'change:'

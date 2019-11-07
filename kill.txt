@@ -3,3 +3,7 @@
 # Import Note: there is a weird symbol: ` which is NOT ' that needs to be used to pass the array
 
 for i in `pidof firefox`; do echo "killing $i"; kill $i; done;
+
+# find and kill specific process (in this case player)
+ps -u enumtheworld | grep -i 'player' #go through all running processes and print out ProcessID that match 'player', ignore sensitivity
+kill ProcessID | # where process id is numeric string

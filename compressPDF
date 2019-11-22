@@ -1,0 +1,4 @@
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.6 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile="output.pdf" "input.pdf"
+# resource: https://medium.com/@hkdb/compress-pdf-files-w-linux-the-easy-way-5a8502e8c327
+# run sudo get-apt update prior to running command
+# recommended to sudo apt install ghostscript

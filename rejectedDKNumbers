@@ -1,0 +1,1 @@
+grep -i txtnation dk_sendsms.csv |perl -ne 'my @a=split /,/; if (/"REJECTED"/i) { $list{$a[3]}++ } elsif ($list{$a[3]}) { print $_ if (/"Success/) }' > rejected_delivered.txt

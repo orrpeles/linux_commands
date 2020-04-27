@@ -1,0 +1,2 @@
+#! split column8 in dataframe dk_sendsms.csv per column
+cut -f8 -d, dk_sendsms.csv | tail -n +2 | sort | uniq -c

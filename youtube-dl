@@ -1,0 +1,2 @@
+sudo youtube-dl -U # Upgrade youtube-dl
+# ref: https://askubuntu.com/questions/380438/how-can-i-update-youtube-dl

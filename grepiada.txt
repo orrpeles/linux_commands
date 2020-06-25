@@ -2,6 +2,7 @@
 
 grep --include='*.py' -ilr 'glob' /home/enumtheworld/inputOutput
 
+# goal: search for the word 'glob' in files that end with .py in the above path
 #i - case sensitivity
 #l - return a file
 #--include='*.py' - return only files that end with .py

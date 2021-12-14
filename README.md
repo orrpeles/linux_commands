@@ -14,3 +14,4 @@ alias logout='gnome-session-quit --no-prompt' # system logout
 alias linuxkill ='for i in `pidof skypeforlinux`; do kill -9 $i; done;'
 alias diskSpace="df -h /dev/sda1 --output=source,fstype,size,used,avail,pcent"
 
+Edit PDF Program: https://smallpdf.com/edit-pdf
